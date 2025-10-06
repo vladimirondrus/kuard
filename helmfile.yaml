@@ -1,0 +1,21 @@
+helmDefaults:
+  wait: true
+  timeout: 30
+
+releases:
+  - name: kuard
+    namespace: default
+    chart: ./charts/kuard
+    installed: true
+    set:
+      - name: image.repository
+        value: gcr.io/kuar-demo/kuard-amd64
+      - name: image.tag
+        value: blue
+      - name: service.type
+        value: ClusterIP
+    # Example of passing CLI flags to kuard via args
+    setJson:
+      - name: args
+        value: ["--readiness-fail-next=-1"]
+
