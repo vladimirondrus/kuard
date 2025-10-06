@@ -1,0 +1,2 @@
+args:
+    - --readiness-fail-next=-1

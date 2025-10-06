@@ -1,0 +1,6 @@
+args:
+    - --readiness-fail-next=-1
+
+image:
+  repository: harbor-ba.sb-sk.local/tools/kuard-amd64
+  tag: blue
