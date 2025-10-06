@@ -44,6 +44,10 @@ nodeSelector: {}
 tolerations: []
 affinity: {}
 
+# Optional explicit command to run. If empty, the chart will use 
+# the kuard binary path `/kuard` as the command.
+command: []
+
 args: []
 env: []
 

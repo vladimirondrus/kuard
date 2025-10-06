@@ -27,6 +27,12 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
+          {{- if .Values.command }}
+          command:
+            {{- toYaml .Values.command | nindent 12 }}
+          {{- else }}
+          command: ["/kuard"]
+          {{- end }}
           args:
             {{- toYaml .Values.args | nindent 12 }}
           env:
