@@ -1,0 +1,14 @@
+# Common VCS dirs
+.git/
+.gitignore
+.svn/
+.hg/
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+**/.DS_Store
+**/Thumbs.db
+

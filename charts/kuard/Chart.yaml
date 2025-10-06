@@ -1,0 +1,16 @@
+apiVersion: v2
+name: kuard
+description: Kubernetes Up and Running demo application (kuard)
+type: application
+version: 0.1.0
+appVersion: "blue"
+home: https://github.com/kubernetes-up-and-running/kuard
+keywords:
+  - demo
+  - kuard
+  - kubernetes-up-and-running
+maintainers:
+  - name: kuard-maintainers
+sources:
+  - https://github.com/kubernetes-up-and-running/kuard
+
